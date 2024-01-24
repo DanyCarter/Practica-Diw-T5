@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="/styles/styleForm.css">
+    <link rel="shortcut icon" href="contact-form.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="hero-container">
+        <div class="hero-body">
+            <h1>Formulario</h1>
+            <span>Dog Mafia</span>
+        </div>
+    </header>
+
+    <section class="container-form">
+        <form action="/index.html" class="formulario" id="formulario" name="formulario" method="get">
+            <input type="text" name="nombre" placeholder="Nombre" class="nombre" id="nombre">
+            <input type="text" name="apellido" placeholder="Apellido" class="apellido" id="apellido">
+            <input type="text" name="correo" placeholder="Correo" class="correo" id="correo">
+            <input type="text" name="telefono" placeholder="Telefono" class="telefono" id="telefono">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" placeholder="Mensaje"></textarea>
+
+            <a class="btn" href="#link" id="enviar">
+                <i>E</i><i>n</i><i>v</i><i>i</i><i>a</i><i>r</i>
+            </a>
+            <ul class="error" id="error"></ul>
+        </form>
+    </section>
+    <script src="/scripts/indexForm.js"></script>
+</body>
+
+</html>
