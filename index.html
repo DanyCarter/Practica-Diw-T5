@@ -7,15 +7,41 @@
     <title>Dogs Mafia</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="shortcut icon" href="aaaa.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/dark.css">
 
 </head>
 
 <body>
 
-
-
     <div class="rs" id="rs">
         <a>Protectora de Animales Family - Gijón</a>
+        
+        <!-- ! DARK MODE -->
+        <label class="switch">
+            <input class="switch__input" type="checkbox" role="switch" onchange="myFunction()">
+            <span class="slider round"></span> 
+        <svg class="switch__icon switch__icon--light" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+                <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round">
+                    <circle cx="6" cy="6" r="2" />
+                    <g stroke-dasharray="1.5 1.5">
+                        <polyline points="6 10,6 11.5" transform="rotate(0,6,6)" />
+                        <polyline points="6 10,6 11.5" transform="rotate(45,6,6)" />
+                        <polyline points="6 10,6 11.5" transform="rotate(90,6,6)" />
+                        <polyline points="6 10,6 11.5" transform="rotate(135,6,6)" />
+                        <polyline points="6 10,6 11.5" transform="rotate(180,6,6)" />
+                        <polyline points="6 10,6 11.5" transform="rotate(225,6,6)" />
+                        <polyline points="6 10,6 11.5" transform="rotate(270,6,6)" />
+                        <polyline points="6 10,6 11.5" transform="rotate(315,6,6)" />
+                    </g>
+                </g>
+            </svg>
+            <svg class="switch__icon switch__icon--dark" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+                <g fill="none" stroke="#fff" stroke-width="1" stroke-linejoin="round" transform="rotate(-45,6,6)">
+                    <path d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"/>
+                </g>	
+            </svg>
+            <span class="switch__sr">Dark Mode</span>
+        </label>
         <img class="logo" src="/assets/img/dog.gif">
         <div class="rrss-container">
             <p><a  href="https://www.youtube.com/watch?v=e5A4TZHA8Eg&list=RDe5A4TZHA8Eg&start_radio=1"><img src="/assets/img/Logo/ytb.png" class="rrss"></a></p>
@@ -55,15 +81,24 @@
         </div>
     </div>
 
+    
+    <div class="video-container">
+        <video autoplay muted loop class="myVideo">
+            <source src="/assets/video/dog.mp4" type="video/mp4">
+            <source src="/assets/video/dog.webm" type="video/webm">
+        </video>
+        <div class="overlay-text">
+            <p>Convierte tu casa en un hogar con huellas de amor</p>
+        </div>
+    </div>
+
 
     <div class="myslides-container">
         <div class="mySlides">
-          <img class="myslides-img" src="/assets/img/guiño.jpg">
           <a href="/templates/dog.html"><button class="btn" id="btnDog" > Adopta un Perro</button></a>
         </div>
       
         <div class="mySlides">
-          <img class="myslides-img" src="/assets/img/cat/gatopalo.jpg">
           <button class="btn" id="btnCat" >Adopta un Gato</button>
         </div>  
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -124,6 +159,18 @@
             </div>
         </div>
     </div>
+
+    
+    <!-- Carrusel -->
+    <div class="carousel">
+        <button id="retroceder">Retroceder</button>
+        <div id="imagen"></div>
+        <button id="avanzar">Avanzar</button>
+    </div>
+    <div class="controles">
+        <button id="play">Play</button>
+        <button id="stop" disabled>Stop</button>
+    </div>    
           
 
         <img id="scrollButton" src="assets/img/up.png" alt="Botón Subir" onclick="scrollToTop()">

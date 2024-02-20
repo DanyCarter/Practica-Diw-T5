@@ -1,18 +1,24 @@
- @font-face {
+@font-face {
     font-family: Granesta;
     src: url(/assets/fonts/granesta/Granesta.ttf);
 };
 
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lexend:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
     font-family: Rubik;
     src: url(/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
-}
+};
+
+@font-face {
+    font-family: 'Title';
+    src: url(/assets/fonts/TitleSolution.ttf);
+};
  
 body,
 html {
+    font-family: 'Granesta', sans-serif;
     margin: 0;
-    font-family: Rubik;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -193,6 +199,12 @@ header {
     width: 80%;
     margin: 0 auto;
 }
+.text-container p{
+    font-family: Rubik;
+    font-size: 20px;
+    margin: 2em;
+
+}
 
 .text-container {
     flex: 1;
@@ -203,9 +215,10 @@ header {
     font-family: Granesta;
     margin: 2em;
 }
-    .text-container p{
-    font-size: 20px;
+
+.text-container p{
     font-family: Rubik;
+    font-size: 20px;
     margin: 2em;
 } 
 
@@ -339,9 +352,7 @@ header {
 
 .whoAreYou p {
     font-family: Rubik;
-    margin-bottom: 1.5em;
-    word-spacing: 0.2em;
-    font-family: Serif;
+    font-size: 20px;
     margin: 2em;
 }
 
@@ -449,4 +460,124 @@ footer {
     header {
         flex-direction: column;
     }
+}
+
+
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+#imagen {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+/* ! MODO OSCURO */
+.dark{
+    background-color: #000;
+    color: #f1f1f1;
+}
+
+/* ! Video */
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Asegura que el video no sobresalga del contenedor */
+}
+
+
+.myVideo {
+    width: 100%;
+    height: auto;
+    margin: 0; /* Elimina márgenes predeterminados */
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir todo el contenedor */
+}
+
+
+.overlay-text {
+    font-family:'Title';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p{
+    font-family: Comforta;
+    font-size: 20px;
+    text-align: center;
+    margin: 2em;
+
+}
+
+
+
+
+/* BEM: .block__element--modifier */
+
+/* Block: wrapper */
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Block: hide-checkbox */
+#hide-checkbox {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Block: toggle */
+.toggle {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background: #211042;
+    border-radius: 50px;
+    transition: 500ms;
+    overflow: hidden;
+}
+
+/* Block: toggle-button */
+.toggle-button {
+    position: absolute;
+    display: inline-block;
+    top: 7px;
+    left: 6px;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background: #FAEAF1;
+    overflow: hidden;
+    box-shadow: 0 0 35px 4px rgba(255, 255, 255);
+    transition: all 500ms ease-out;
+}
+
+/* Block: crater */
+.crater {
+    position: absolute;
+    display: inline-block;
+    background: #FAEAF1;
+    border-radius: 50%;
+    transition: 500ms;
+}
+
+/* Element: crater-1 of Block: crater */
+.crater__crater-1 {
+    background: #FFFFF9;
+    width: 86px;
+    height: 86px;
+    left: 10px;
+    bottom: 10px;
 }
