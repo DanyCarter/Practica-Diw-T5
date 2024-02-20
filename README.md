@@ -1,6 +1,8 @@
-# Dogs Mafia Website
+# Protectora de Animales Family - Gijón Website
 
-Este repositorio contiene el código fuente para el sitio web de Dogs Mafia, una protectora de animales con sede en Gijón. El sitio web proporciona información sobre la protectora, sus servicios, y destaca a los animales disponibles para adopción.
+## Descripción
+
+Este repositorio contiene el código fuente del sitio web de la Protectora de Animales Family con sede en Gijón. La protectora se dedica a brindar refugio y cuidado a animales necesitados, fomentando la adopción responsable y concienciando sobre el bienestar animal. El sitio web proporciona información detallada sobre la protectora, sus servicios, y destaca a los animales disponibles para adopción.
 
 ## Contenido del Repositorio
 
@@ -14,7 +16,7 @@ Este repositorio contiene el código fuente para el sitio web de Dogs Mafia, una
 
 - **`index.html`**: Archivo HTML principal que estructura la página de inicio del sitio web.
 
-- **`README.md`**: Este archivo que proporciona información sobre el repositorio.
+- **`README.md`**: Este archivo que proporciona información detallada sobre el repositorio y su uso.
 
 ## Uso del Sitio
 
@@ -26,6 +28,16 @@ Este repositorio contiene el código fuente para el sitio web de Dogs Mafia, una
 
 4. Contacta a la protectora a través de la sección "Contacto" si estás interesado en adoptar o tienes preguntas.
 
+## Funcionalidades Destacadas
+
+- **Botón de Modo Oscuro:** El sitio cuenta con un botón de modo oscuro para mejorar la experiencia del usuario.
+
+- **Carrusel de Imágenes:** Visualiza una selección de imágenes de los animales de la protectora con controles para avanzar, retroceder y reproducción automática.
+
+- **Botón de Desplazamiento:** Un botón de desplazamiento suave permite a los usuarios regresar rápidamente al inicio de la página.
+
+- **Navegación Móvil:** La navegación se adapta a dispositivos móviles con un menú de hamburguesa para una experiencia de usuario intuitiva.
+
 ## Desarrollo y Contribuciones
 
 Si deseas contribuir o realizar mejoras en el sitio, sigue estos pasos:
@@ -35,7 +47,7 @@ Si deseas contribuir o realizar mejoras en el sitio, sigue estos pasos:
 2. Clona el repositorio desde tu cuenta a tu máquina local.
 
    ```bash
-   git clone https://github.com/tu-usuario/dogs-mafia-website.git
+   git clone https://github.com/tu-usuario/protectora-family-website.git
    ```
 
 3. Realiza tus modificaciones y mejoras.
@@ -50,4 +62,4 @@ Si deseas contribuir o realizar mejoras en el sitio, sigue estos pasos:
 
 5. Abre un pull request en este repositorio original para revisar y fusionar tus cambios.
 
-¡Gracias por contribuir al sitio web de Dogs Mafia! 🐾❤️
+¡Gracias por contribuir al sitio web de la Protectora de Animales Family! 🐾❤️
