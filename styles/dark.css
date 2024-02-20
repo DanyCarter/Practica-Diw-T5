@@ -1,6 +1,7 @@
 :root {
 	--hue: 223;
-	--bg: hsl(var(--hue), 10%, 90%);
+	--bg-active: black; /* Color when switch is active */
+	--bg-inactive: #5585b5; /* Color when switch is inactive */
 	--fg: hsl(var(--hue), 10%, 10%);
 	--primary: hsl(var(--hue), 90%, 50%);
 	--trans-dur: 0.3s;
@@ -8,38 +9,40 @@
 	--trans-timing-in: cubic-bezier(0.76, 0.05, 0.86, 0.06);
 	--trans-timing-out: cubic-bezier(0.05, 0.76, 0.06, 0.86);
 	font-size: calc(40px + (80 - 40) * (100vw - 320px) / (2560 - 320px));
-  }
-  
-  body,
-  input {
+}
+
+body,
+input {
 	color: var(--fg);
 	font: 1em/1.5 sans-serif;
-  }
-  
+}
 
-  
-  .switch {
+.switch {
 	margin: auto;
 	position: relative;
-  }
-  
-  .switch__icon,
-  .switch__input {
-	  display: block;
-  }
-  .switch__icon {
-	  position: absolute;
-	  top: 0.375em;
-	  right: 0.375em;
-	  width: 0.75em;
-	  height: 0.75em;
-	  transition:
-		  opacity calc(var(--trans-dur) / 2),
-		  transform calc(var(--trans-dur) / 2);
-  }
+}
+
+.switch__icon,
+.switch__input {
+	display: block;
+}
+
+.switch__icon {
+	position: absolute;
+	top: 0.375em;
+	right: 0.375em;
+	width: 0.75em;
+	height: 0.75em;
+	transition:
+		opacity calc(var(--trans-dur) / 2),
+		transform calc(var(--trans-dur) / 2);
+}
+
+
   .switch__icon polyline {
 	  transition: stroke-dashoffset calc(var(--trans-dur) / 2);
   }
+
   .switch__icon--light,
   .switch__icon--light polyline {
 	  transition-delay: calc(var(--trans-dur) / 2);
@@ -50,23 +53,25 @@
 	  transform: translateX(-0.75em) rotate(30deg) scale(0.75);
 	  transition-timing-function: var(--trans-timing-in);
   }
+
   .switch__input {
-	  background-color: hsl(210,90%,70%);
-	  border-radius: 0.75em;
-	  box-shadow:
-		  0 0 0 0.125em hsla(var(--hue),90%,50%,0),
-		  0.125em 0.125em 0.25em hsla(var(--hue),90%,10%,0.2);
-	  outline: transparent;
-	  position: relative;
-	  width: 3em;
-	  height: 1.5em;
-	  -webkit-appearance: none;
-	  appearance: none;
-	  -webkit-tap-highlight-color: transparent;
-	  transition:
-		  background-color var(--trans-dur) var(--trans-timing),
-		  box-shadow 0.15s linear;
-  }
+	background-color: var(--bg-inactive); /* Initial background color */
+	border-radius: 0.75em;
+	box-shadow:
+		0 0 0 0.125em hsla(var(--hue),90%,50%,0),
+		0.125em 0.125em 0.25em hsla(var(--hue),90%,10%,0.2);
+	outline: transparent;
+	position: relative;
+	width: 3em;
+	height: 1.5em;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	transition:
+		background-color var(--trans-dur) var(--trans-timing),
+		box-shadow 0.15s linear;
+}
+
   .switch__input:focus-visible {
 	  box-shadow:
 		  0 0 0 0.125em hsl(var(--hue),90%,50%),
@@ -100,8 +105,8 @@
 	  z-index: 1;
   }
   .switch__input:checked {
-	  background-color: hsl(290,90%,40%);
-  }
+	background-color: var(--bg-active); /* Background color when switch is active */
+}
   .switch__input:checked:before {
 	  background-color: hsl(220,90%,40%);
   }
@@ -134,3 +139,19 @@
 	  height: 1px;
   }
   
+  /* ! MODO OSCURO */
+ .dark{
+    background-color: #000;
+    color: #f1f1f1;
+} 
+
+body.dark-mode {
+	background-color: var(--bg-active);
+}
+
+
+
+.dark.dark-mode {
+	background-color: var(--bg-active);
+	color: #f1f1f1;
+}

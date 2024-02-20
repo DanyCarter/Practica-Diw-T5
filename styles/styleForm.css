@@ -51,7 +51,7 @@ a {
     position: relative;
     align-items: center;
     display: flex;
-    background: url(/assets/img/cat/2560x1440-px-lines-minimalistic-multicolor-retro-vector-805147-wallhere.com\ \(1\).svg) center/cover;
+    background: url() center/cover;
     clip-path: polygon(0% 0%, 0% 100%, 100% 81%, 100% 0%);
     width: 100vw;
 }
@@ -233,6 +233,7 @@ body {
     border: 1px solid #FFF;
     cursor: pointer;
     transform: translate3d(0, 0, 0);
+    
 
     &:after {
         content: "";
