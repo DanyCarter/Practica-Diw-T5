@@ -29,6 +29,9 @@ header {
 }
 
 .rs {
+  font-family: 'Rubik';
+  font-size: 20px;
+  font-weight: bold;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background: #5585b5;
@@ -466,7 +469,6 @@ footer {
 }
 
 .overlay-text {
-  font-family: "Title";
   position: absolute;
   top: 15%;
   left: 50%;
@@ -477,14 +479,22 @@ footer {
   font-weight: bold;
 }
 
+.overlay-text p{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  margin: 5px;
+}
+
 .buttons {
   margin: 10px auto;
   left: 40%;
   display: flex;
   width: 380px;
   gap: 10px;
-  --b: 5px;   /* the border thickness */
-  --h: 1.8em; /* the height */
+  --b: 5px;  
+  --h: 1.8em; 
 }
 
 .buttons button {
@@ -546,10 +556,11 @@ button:active {
 }
 
 @media screen and (max-width: 650px) {
-  .text-container p {
-      display: none;
+  .text-container p{
+    display: none;
   }
 }
+
 
 /*# sourceMappingURL=styles.css.map */
  
