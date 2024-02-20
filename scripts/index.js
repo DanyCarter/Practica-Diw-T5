@@ -18,7 +18,7 @@ window.onclick = function(event) {
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
-        }
+        } 
 
         // Restablece el estado de las líneas del botón hamburguesa
         var lines = document.querySelectorAll('.hamburger-button .line');
