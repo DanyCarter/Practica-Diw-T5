@@ -177,7 +177,7 @@ function stopIntervalo() {
 }
 
 // Eventos
-$botonAvanzar.addEventListener('click', pasarFoto);
+$botonAvanzar.addEventListener('click', pasarFoto); 
 $botonRetroceder.addEventListener('click', retrocederFoto);
 $botonPlay.addEventListener('click', playIntervalo);
 $botonStop.addEventListener('click', stopIntervalo);
