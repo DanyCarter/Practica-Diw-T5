@@ -62,4 +62,4 @@ Si deseas contribuir o realizar mejoras en el sitio, sigue estos pasos:
 
 5. Abre un pull request en este repositorio original para revisar y fusionar tus cambios.
 
-¡Gracias por contribuir al sitio web de la Protectora de Animales Family! 🐾❤️
+¡Gracias por contribuir al sitio web de la Protectora de Animales Family! 🐾❤️ 
